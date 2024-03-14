@@ -1,0 +1,94 @@
+
+.container {
+  display: flex; 
+  width: 100%; 
+}
+
+.containerLeft {
+  width: 60%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  position: relative; 
+  padding-left: 20px;
+}
+
+.containerRight {
+  width: 40%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  position: relative; 
+  padding-right: 20px;
+}
+
+.outerContainerLeft,
+.outerContainerRight {
+  width: 80%; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.outerContainerLeft{
+  padding-top: 20px;
+}
+
+.innerContainerLeft,
+.innerContainerRight {
+  width: 100%;
+  max-width: 100%;
+}
+
+.outerContainerRight {
+  width: 50%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContainerRight {
+  width: 100%;
+  max-width: 60%;
+  height: 85%;
+  border: 2px solid red;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.innerContainerLeft{
+  justify-content: center; 
+  align-items: center;
+}
+
+@media only screen and (max-width: 425px) {
+  .containerLeft {
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .containerRight {
+    display: none; 
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .containerLeft {
+    width: 100%; 
+    display: flex; 
+    justify-content: right; 
+    align-items: center; 
+    position: relative;
+  
+  }
+}

@@ -1,0 +1,36 @@
+.pokemonData-Container{
+    display: inline-flexbox;
+    width: 100%;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.spriteContainer{
+    padding: 10px;
+    margin: 0 160px;
+    border-radius: 80%;
+}
+
+.entryData-Container{
+    background-color: lightgray;
+    max-width: 55%; 
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 650px) {
+    .entryData-Container{
+        max-width: 35%; 
+    }
+}
+
+.pokemonData-types{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-right: 25px; 
+}
+.pokemonData-type{
+    padding-right: 10px;
+    list-style: none;
+}
